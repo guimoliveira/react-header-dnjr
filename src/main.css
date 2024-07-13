@@ -1,0 +1,58 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 .2em 1em lightgrey;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+button {
+  position: fixed;
+  border-radius: 50%;
+  width: 10vmin;
+  height: 10vmin;
+  background-color: red;
+  color: white;
+  font-size: 5vmin;
+  transform: translate(calc((100vmax - 10vmin) / 2), 45vmin);
+}
+
+button:active {
+  background-color: darkred;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
